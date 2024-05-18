@@ -1,0 +1,53 @@
+@import "../../scss/imports.scss";
+.shop {
+  max-width: 1440px;
+  margin: 0 auto;
+  .products {
+    display:  flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    .product-item {
+      flex: 1 0 21%; 
+      margin-top: 80px;
+      max-width: 276px;
+      box-shadow: 0px 0px 2px 0px $shadow;
+      border-radius: 10px;
+      .product-description {
+        padding: 10px 15px;
+        p {
+          height: 80px;
+          font-family: $font-epilogue;
+          font-size: 24px;
+          font-weight: $weight-bold;
+          line-height: 36px;
+        }
+        .product-action {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content:space-between;
+          margin-top: 40px;
+          span {
+            font-family: $font-inter;
+            font-size: 16px;
+            font-weight: $weight-regular;
+            line-height: 26px;
+          }
+          button {
+            min-width: 104px;
+            height: 36px;
+            font-family: $font-inter;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: $weight-regular;
+            color: $white;
+            background: $saffron;
+            border: solid 1px $saffron;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
