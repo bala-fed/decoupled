@@ -1,0 +1,63 @@
+.MuiSvgIcon-root {
+  top: 20px;
+  right: 13px;
+}
+.cart-container {
+  h3 {
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      padding-right: 10px;
+    }
+  }
+  .cart-items-table {
+    margin-top: 40px;
+    width: 100%;
+    .cart-item {
+      th, td {
+        text-align: center;
+        font-family: Epilogue;
+        font-size: 14px;
+        line-height: 22px;
+        &:nth-child(2) {
+          text-align: left;
+        }
+      }
+      th {
+
+        font-weight: 600;
+        color: #565E6C;
+      }
+      td.cart-item-title {
+        font-family: Epilogue;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .cart-item-img {
+        img {
+          width: 80px;
+          height: 93px;
+          object-fit: cover;
+        }
+      }
+      .cart-item-qty {
+        button {
+          padding: 3px;
+          margin: 0 5px;
+          font-size: 22px;
+        }
+      }
+      button {
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    }
+    tfoot {
+      td {
+        text-align: right;
+      }
+    }
+  }
+}

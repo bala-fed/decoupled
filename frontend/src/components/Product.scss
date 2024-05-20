@@ -1,4 +1,4 @@
-@import "../../scss/imports.scss";
+@import "../scss/imports.scss";
 .shop {
   max-width: 1440px;
   margin: 0 auto;
@@ -37,14 +37,32 @@
           button {
             min-width: 104px;
             height: 36px;
+            padding: 0 10px;
             font-family: $font-inter;
             font-family: Inter;
             font-size: 14px;
             font-weight: $weight-regular;
             color: $white;
             background: $saffron;
-            border: solid 1px $saffron;
+            border: solid 2px $saffron;
             border-radius: 5px;
+            transition: all 0.25s;
+            cursor: pointer;
+            &.addto-cart-btn {
+              &:hover {
+                color: $saffron;
+                background: $white;
+              }
+            }
+            &.btn-remove {
+              border-color: $red;
+              background: $red;
+              color: $white;
+              &:hover {
+                color: $red;
+                background: $white;
+              }
+            }
           }
         }
       }
